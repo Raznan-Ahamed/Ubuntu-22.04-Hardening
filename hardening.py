@@ -148,11 +148,11 @@ if __name__ == "__main__":
     print("5. Configure loopback IP")
     option = int(input("Choose option: "))
     option_functions = {
-    1: run_bootloader_script(),
-    2: run_ip_forwarding_script(),
-    3: run_install_ufw_script(),
-    4: run_enable_ufw_script(),
-    5: run_configure_loopback_script(),
+    1: run_bootloader_script,
+    2: run_ip_forwarding_script,
+    3: run_install_ufw_script,
+    4: run_enable_ufw_script,
+    5: run_configure_loopback_script,
 }
 
 if option in option_functions:
